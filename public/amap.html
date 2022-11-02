@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高德地图演示</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .contaner {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #map-contaner {
+            flex: 1;
+        }
+
+        .contaner>div:last-of-type {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+        <!-- 地图呈现部分 -->
+        <div id="map-contaner">地图信息</div>
+        <div></div>
+    </div>
+
+    <script>
+        window._AMapSecurityConfig = {
+            securityJsCode: '8b71e2c6ab481690cf1223a695743790',
+        }
+    </script>
+
+    <script src="https://webapi.amap.com/loader.js"></script>
+
+    <script src="amap.js"></script>
+</body>
+
+</html>
